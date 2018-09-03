@@ -9,7 +9,7 @@ def read(fname):
 
 setup(
     name='django-s3-folder-storage',
-    version='0.5',
+    version='0.6',
     description="Quick extension of django-storages' S3BotoStorage to allow separate folders for uploaded and static media within an S3 bucket.",
     author='Benjamin W Stookey',
     author_email='ben.stookey@gmail.com',
@@ -30,5 +30,5 @@ setup(
         'Framework :: Django',
     ],
     test_suite='tests.main',
-    install_requires=['django-storages', 'boto3'],
+    install_requires=['django-storages==1.6', 'boto3'],
 )
